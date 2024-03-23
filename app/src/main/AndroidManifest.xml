@@ -6,14 +6,14 @@
   ~ Some rights reserved. See COPYING.
   -->
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.cwde.freeshisen">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:name="de.cwde.freeshisen.ShisenSho"
         android:allowBackup="true"
         android:icon="@drawable/icon"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        >
         <meta-data
             android:name="android.max_aspect"
             android:value="3.0" />
@@ -27,12 +27,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SettingsActivity"
-            android:parentActivityName=".ShisenShoActivity"
+            android:name="de.cwde.freeshisen.SettingsActivity"
+            android:parentActivityName="de.cwde.freeshisen.ShisenShoActivity"
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ShisenShoActivity" />
+                android:value="de.cwde.freeshisen.ShisenShoActivity" />
 
             <intent-filter>
                 <action android:name="de.cwde.freeshisen.SETTINGS" />
@@ -41,7 +41,7 @@
         </activity>
         <activity
             android:name="de.cwde.freeshisen.HighscoreActivity"
-            android:parentActivityName=".ShisenShoActivity"
+            android:parentActivityName="de.cwde.freeshisen.ShisenShoActivity"
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
