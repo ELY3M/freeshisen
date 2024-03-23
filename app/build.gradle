@@ -1,21 +1,21 @@
 apply plugin: 'com.android.application'
 
-def keystorePropertiesFile = rootProject.file("keystore.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+//def keystorePropertiesFile = rootProject.file("keystore.properties")
+//def keystoreProperties = new Properties()
+//keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "de.cwde.freeshisen"
-        minSdkVersion 14
-        targetSdkVersion 28
+        minSdkVersion 23
         versionCode 18
         versionName "0.6.6"
     }
-
+/*
     signingConfigs {
         signconfig {
             keyAlias keystoreProperties['keyAlias']
@@ -24,12 +24,13 @@ android {
             storePassword keystoreProperties['storePassword']
         }
     }
+*/
 
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.signconfig
+            //signingConfig signingConfigs.signconfig
         }
         debug {
             applicationIdSuffix '.dbg'

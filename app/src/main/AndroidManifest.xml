@@ -27,12 +27,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="de.cwde.freeshisen.SettingsActivity"
-            android:parentActivityName="de.cwde.freeshisen.ShisenShoActivity"
+            android:name=".SettingsActivity"
+            android:parentActivityName=".ShisenShoActivity"
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.cwde.freeshisen.ShisenShoActivity" />
+                android:value=".ShisenShoActivity" />
 
             <intent-filter>
                 <action android:name="de.cwde.freeshisen.SETTINGS" />
@@ -41,7 +41,7 @@
         </activity>
         <activity
             android:name="de.cwde.freeshisen.HighscoreActivity"
-            android:parentActivityName="de.cwde.freeshisen.ShisenShoActivity"
+            android:parentActivityName=".ShisenShoActivity"
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
