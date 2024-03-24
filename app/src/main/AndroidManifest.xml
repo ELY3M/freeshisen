@@ -20,7 +20,8 @@
 
         <activity
             android:name="de.cwde.freeshisen.ShisenShoActivity"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+			android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -29,7 +30,8 @@
         <activity
             android:name="de.cwde.freeshisen.SettingsActivity"
             android:parentActivityName="de.cwde.freeshisen.ShisenShoActivity"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+			android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="de.cwde.freeshisen.ShisenShoActivity" />
@@ -42,7 +44,8 @@
         <activity
             android:name="de.cwde.freeshisen.HighscoreActivity"
             android:parentActivityName="de.cwde.freeshisen.ShisenShoActivity"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+			android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="de.cwde.freeshisen.ShisenShoActivity" />
