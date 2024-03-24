@@ -12,6 +12,7 @@ android {
     defaultConfig {
         applicationId "de.cwde.freeshisen"
         minSdkVersion 23
+		targetSdk 33
         versionCode 18
         versionName "0.6.7"
     }
